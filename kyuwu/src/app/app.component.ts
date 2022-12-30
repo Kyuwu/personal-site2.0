@@ -14,8 +14,6 @@ import {
 import {
   loadFull
 } from "tsparticles";
-import { Config } from 'src/assets/particle';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -24,10 +22,10 @@ import { Config } from 'src/assets/particle';
 export class AppComponent {
   title = 'kyuwu';
   id = "tsparticles";
-  particlesUrl = "https://raw.githubusercontent.com/Kyuwu/personal-website/main/parts.json";
+  particlesUrl = "https://raw.githubusercontent.com/Kyuwu/personal-site2.0/main/kyuwu/src/assets/particle.json";
 
   /* or the classic JavaScript object */
-  particlesOptions = Config
+  // particlesOptions = Config
 
 
   particlesLoaded(container: Container): void {
