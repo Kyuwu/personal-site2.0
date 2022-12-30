@@ -27,7 +27,22 @@ export class AppComponent {
   /* or the classic JavaScript object */
   // particlesOptions = Config
 
-
+  options = {
+    fpsLimit: 120,
+    particles: {
+      color: {
+        value: "#943c74"
+      },
+      links: {
+        enable: true,
+        color: "#ce8ba0"
+      },
+      move: {
+        enable: true,
+        speed: 1
+      }
+    }
+  };
   particlesLoaded(container: Container): void {
     // console.log(container);
   }
